@@ -62,5 +62,5 @@ SQLAlchemy==2.0.34
 starlette==0.38.5
 tomli==2.0.1
 tonyg-rfc3339==0.1
-typing_extensions==4.12.2
+typing_extensions==4.8.0
 yarl==1.11.1
