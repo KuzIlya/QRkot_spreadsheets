@@ -23,7 +23,7 @@ packaging
 pluggy
 pwdlib
 pycparser
-pydantic
+pydantic==2.9.0
 pydantic-settings
 pydantic_core
 PyJWT
