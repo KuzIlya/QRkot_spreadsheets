@@ -22,7 +22,7 @@ class DonationRead(DonationBase):
     create_date: datetime
 
     class Config:
-        from_attributes = True
+        orm_mode = True
 
 
 class DonationDB(DonationRead):

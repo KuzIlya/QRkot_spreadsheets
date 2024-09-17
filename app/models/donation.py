@@ -1,15 +1,15 @@
-from typing import Optional
-
-from sqlalchemy import ForeignKey, Text
-from sqlalchemy.orm import Mapped, mapped_column
+from sqlalchemy import Column, ForeignKey, Integer, Text
 
 from app.core.db import Base
 from app.models.base import DateMixin, InvestmentMixin
 
 
 class Donation(InvestmentMixin, DateMixin, Base):
-    user_id: Mapped[int] = mapped_column(ForeignKey('user.id'))
-    comment: Mapped[Optional[str]] = mapped_column(Text)
+    user_id = Column(
+        Integer,
+        ForeignKey('user.id', name='fk_donation_user_id_user'),
+    )
+    comment = Column(Text)
 
     def __repr__(self):
         return (

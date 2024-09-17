@@ -38,7 +38,7 @@ class CharityProjectUpdate(BaseModel):
     full_amount: Optional[PositiveInt] = Field(None)
 
     class Config:
-        from_attributes = True
+        orm_mode = True
         extra = Extra.forbid
 
     @validator('name')
@@ -68,4 +68,4 @@ class CharityProjectDB(CharityProjectBase):
     close_date: Optional[datetime] = Field(None)
 
     class Config:
-        from_attributes = True
+        orm_mode = True
