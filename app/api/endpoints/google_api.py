@@ -8,7 +8,7 @@ from app.core.user import current_superuser
 
 from app.constants import GOOGLE_SHEETS_URL
 from app.crud.charity_project import charity_project_crud
-from app.googleAPI.google_api_service import (
+from app.api.google_api_service import (
     set_user_permissions, spreadsheets_create, spreadsheets_update_value
 )
 

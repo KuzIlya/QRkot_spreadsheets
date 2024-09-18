@@ -60,7 +60,7 @@ async def check_charity_project_exists(
     return project
 
 
-async def check_charity_project_already_invested(
+def check_charity_project_already_invested(
     charity_project: CharityProject
 ) -> None:
     """Проверка на наличие пожертвований"""
